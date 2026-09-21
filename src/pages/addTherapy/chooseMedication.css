@@ -1,0 +1,17 @@
+.choose-medication__existing {
+    margin-bottom: var(--margin-base);
+}
+
+.choose-medication__existing label {
+    display: flex;
+    flex-direction: column;
+}
+
+.choose-medication__new {
+    margin-top: var(--margin-base);
+}
+
+.choose-medication__new.control {
+    background-color: var(--tea-green);
+    box-shadow: none;
+}

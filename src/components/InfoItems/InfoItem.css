@@ -1,0 +1,32 @@
+.info-item__infos {
+    position: relative;
+    padding: var(--padding-inline-base);
+    padding-right: calc(2 * var(--padding-inline-base));
+    border-radius: var(--border-radius-base);
+    background: var(--snow-grey);
+    /*box-shadow: 0.1rem 0.4rem 1.5rem color-mix(in oklab, var(--tangerine-dream) 30%, transparent);*/
+}
+
+.info-item__title {
+    margin-bottom: var(--margin-small);
+    font-size: var(--font-size-l);
+    font-weight: bold;
+}
+
+.info-item__table {
+    display: grid;
+    grid-template-columns: max-content 1fr; /* Label + Value */
+    gap: var(--gap-small) var(--gap-base); /* row-gap column-gap */
+    align-items: start;
+}
+
+.info-item__table dd {
+    margin: 0; /* entfernt Standard-Indent */
+    word-break: break-word;
+    font-style: italic;
+}
+
+.info-item:focus-within .info-item__infos {
+    outline: 0.15rem solid var(--tangerine-dream);
+    outline-offset: 0.15rem;
+}

@@ -1,0 +1,17 @@
+.set-reminder-interval__time--wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    font-weight: bold;
+    margin-top: var(--margin-base);
+}
+
+/* media query */
+
+@media (max-width: 24rem) {
+    .set-reminder-interval__time--wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--gap-base);
+    }
+}
